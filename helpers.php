@@ -8,15 +8,15 @@ function base_url($path="") {
 
 function base_path($path=""){
     $root_path = dirname(__DIR__);
-    $base_path = $root_path . DIRECTORY_SEPARATOR . ltrim($path, DIRECTORY_SEPARATOR);
+    return $root_path . DIRECTORY_SEPARATOR . ltrim($path, DIRECTORY_SEPARATOR);
 }
 
 function uploads_path($filename=''){
     return base_path('uploads' . DIRECTORY_SEPARATOR . $filename);
 }
 
-function uploads_url($filename=''){
-    return base_path('uploads/' . ltrim( $filename, '/'));
+function uploads_url($filename = '') {
+    return base_url('uploads/' . ltrim($filename, '/'));
 }
 
 function asset_url ($path = ''){
