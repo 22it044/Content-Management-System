@@ -2,7 +2,13 @@
 include"partials/header.php";
 include"partials/navbar.php";
 include"partials/hero.php";
+
+$db = new Database();
+$db->getConnection();
+
 ?>
+
+
 
 <!-- Main Content -->
     <main class="container my-5">
