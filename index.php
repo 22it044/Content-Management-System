@@ -16,14 +16,14 @@ $articles = $article->get_all();
 <!-- Main Content -->
     <main class="container my-5">
         <?php if(!empty($articles)): ?>
-            <?php foreach($articles as $article): ?>
+            <?php foreach($articles as $articleItem): ?>
 
         <!-- Blog Post 1 -->
         <div class="row mb-4">
             <div class="col-md-4">
-                <?php if(!empty($article->image)): ?>
+                <?php if(!empty($articleItem->image)): ?>
                     <imgs
-                        src="<?php echo htmlspecialchars($article->image) ?>"
+                        src="<?php echo htmlspecialchars($articleItem->image) ?>"
                         class="img-fluid"
                         alt="Blog Post Image"
                     >
@@ -37,11 +37,8 @@ $articles = $article->get_all();
 
             </div>
             <div class="col-md-8">
-                <h2><?php echo htmlspecialchars($article->title); ?></h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
-                    pulvinar facilisis justo mollis, auctor consequat urna.
-                </p>
+                <h2><?php echo htmlspecialchars($articleItem->title); ?></h2>
+                <p>  <?php echo htmlspecialchars($article->getExcerpt($articleItem->content, 30)); ?>  </p>
                 <a href="article.php" class="btn btn-primary">Read More</a>
             </div>
         </div>

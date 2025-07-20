@@ -9,6 +9,12 @@ class Article {
         $this->conn = $database->getConnection();
     }
 
+    public function getExcerpt($content, $length = 30){
+        if(strlen($content) > $length){
+            return substr($content, 0,$length) . "....";
+        }
+
+    }
     public function get_all(){
         $query = "SELECT * FROM " . $this-> table . " ORDER BY id DESC";
         $stmt = $this->conn->prepare($query);
