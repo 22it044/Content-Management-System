@@ -39,7 +39,7 @@ $articles = $article->get_all();
             <div class="col-md-8">
                 <h2><?php echo htmlspecialchars($articleItem->title); ?></h2>
                 <p>  <?php echo htmlspecialchars($article->getExcerpt($articleItem->content, 30)); ?>  </p>
-                <a href="article.php" class="btn btn-primary">Read More</a>
+                <a href="article.php?id=<?php echo $articleItem->id; ?>" class="btn btn-primary">Read More</a>
             </div>
         </div>
        
