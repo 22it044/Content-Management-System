@@ -49,19 +49,19 @@ A responsive blog web application built with PHP and MySQL, featuring a full adm
 ## Screenshots
 
 <img width="1919" height="965" alt="image" src="https://github.com/user-attachments/assets/dd8768a2-3da8-4855-b93e-2d3dfef52fa7" />
-Normal View
+- Normal View
 
 <img width="1919" height="963" alt="image" src="https://github.com/user-attachments/assets/c3ea4176-d7c4-4613-bb67-16ea09b2a11d" />
-Landing page
+- Landing page
 
 <img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/c240629e-93bd-4d5b-b77d-db82222b1db7" />
-Add Post
+- Add Post
 
 <img width="1919" height="965" alt="image" src="https://github.com/user-attachments/assets/a11bbf66-9ee9-4949-9bfd-e15f85754cad" />
-Manage Posts
+- Manage Posts
 
 <img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/b173500c-a5be-4d2b-b72a-5dbcaf1942fc" />
-Manage User
+- Manage User
 
 
 For detailed technical documentation, see `TECHNICAL_DOCUMENTATION.md`.
